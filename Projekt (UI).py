@@ -87,14 +87,12 @@ def nupu_väärtus():
     try:
         summa = float(summa,2)
     except:
-#     summa = summa_sisend.get()
-#    if isinstance(summa, str) or not summa:
 #     kuna textbox on alati str type, siis proovime try exceptiga teda muuta floatiks ning 2 komakohta peale koma
 #    aga proovime convertida, kui õnnestub, siis prindime kasutajale tühja teate ehk mitte midagi ja kui ei, siis
 #    kirjutame kasutajale sõnumina teate, mida kasutaja peab muutma või lisama
         tulemus_silt.configure(text="Palun sisestage summa numbrites", text_color="red")
     if isinstance(summa, int):
-        tulemus_silt.configure(text="Tubli!", text_color="green")
+        tulemus_silt.configure(text="", text_color="green")
     if valuuta_combobox1.get() == "" or valuuta_combobox2.get() == "":
         tulemus_silt.configure(text="Palun valige valuuta", text_color="red")
 
