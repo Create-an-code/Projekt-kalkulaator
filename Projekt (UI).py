@@ -85,7 +85,7 @@ valuuta_combobox2.set("")
 def nupu_väärtus():
     summa = summa_sisend.get()
     try:
-        summa = float(summa,2)
+        summa = round(float(summa,2))
     except:
 #     kuna textbox on alati str type, siis proovime try exceptiga teda muuta floatiks ning 2 komakohta peale koma
 #    aga proovime convertida, kui õnnestub, siis prindime kasutajale tühja teate ehk mitte midagi ja kui ei, siis
@@ -95,6 +95,7 @@ def nupu_väärtus():
         tulemus_silt.configure(text="", text_color="green")
     if valuuta_combobox1.get() == "" or valuuta_combobox2.get() == "":
         tulemus_silt.configure(text="Palun valige valuuta", text_color="red")
+    
 
 
 
