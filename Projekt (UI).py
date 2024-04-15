@@ -85,12 +85,13 @@ valuuta_combobox2.set("")
 def nupu_väärtus():
     summa = summa_sisend.get()
     try:
-        summa = int(summa)
+        summa = float(summa,2)
     except:
 #     summa = summa_sisend.get()
 #    if isinstance(summa, str) or not summa:
-#     kuna textbox on alati str type, siis proovime try exceptiga teda muuta intiks (võid pärast folatiy ja roundinga ümber teha)
-#    aga proovime convertida, kui õnnestub, siis prin tubli ja kui ei, siis excepi all on irjas see, mida enne thatsid kuvada, et peab olema number
+#     kuna textbox on alati str type, siis proovime try exceptiga teda muuta floatiks ning 2 komakohta peale koma
+#    aga proovime convertida, kui õnnestub, siis prindime kasutajale tühja teate ehk mitte midagi ja kui ei, siis
+#    kirjutame kasutajale sõnumina teate, mida kasutaja peab muutma või lisama
         tulemus_silt.configure(text="Palun sisestage summa numbrites", text_color="red")
     if isinstance(summa, int):
         tulemus_silt.configure(text="Tubli!", text_color="green")
