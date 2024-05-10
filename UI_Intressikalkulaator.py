@@ -108,7 +108,7 @@ def run():
         # aga proovime convertida, kui õnnestub, siis prindime kasutajale tühja teate ehk mitte midagi ja kui ei, siis
         # kirjutame kasutajale sõnumina teate, mida kasutaja peab muutma või lisama
         try:
-            intressimaar = float(intressimaar)
+            intressimaar = int(float(intressimaar))
         except:
             tulemus_silt.configure(text="Palun sisestage intressimäär numbrites", text_color = "red")
         # tingimus1, kui summa on täisarv, siis veateadet ei kuvata
