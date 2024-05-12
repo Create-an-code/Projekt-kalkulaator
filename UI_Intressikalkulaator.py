@@ -1,5 +1,6 @@
 import tkinter
 import customtkinter
+import intress_kood
 
 def run():
     
@@ -57,7 +58,7 @@ def run():
 
     # Euribori sildi loomine, mille väärtus kuvatakse kasutajale
     Euribor_silt = customtkinter.CTkLabel(master=raam,
-                                        text="Euribor: {vaartus}",
+                                        text="Euribor: " + str(round(intress_kood.euribor(),3)) + '%',
                                         width=25,
                                         height=25,
                                         corner_radius=8, font=customtkinter.CTkFont(family="Helvetica", size=14))
@@ -144,7 +145,9 @@ def run():
         # tingimus11, kui intressimäära lahter jäetakse tühjaks, siis kuvatakse kasutajale veateade
         if intressimaar == "":
             tulemus_silt.configure(text="Palun sisestage intressimäär numbrites", text_color = "red")
-
+        kuuline , koik = intress_kood.LaenuArvutus(summa, kuu, intressimaar)
+        tulemus_silt.configure(text = 'Laenu kuumakse on ' + str(kuuline) + '€\n' + 
+                            'Laenu kogukulu on ' + str(koik) + '€')
     # loome nupu, peale mida kuvatakse vajalik info, või veateated vms
     nupp = customtkinter.CTkButton(master=raam,
                                      width=120,
@@ -156,6 +159,7 @@ def run():
     nupp.place(relx=0.5, rely=0.65, anchor=tkinter.CENTER)
 
     intress_aken.mainloop()
+    
 
 if __name__ == "__main__":
     run()
