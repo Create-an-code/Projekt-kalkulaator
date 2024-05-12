@@ -92,6 +92,10 @@ def run():
         kuu = kuu_sisend.get()
         summa = summa_sisend.get()
         intressimaar = intress_sisend.get()
+        # Eemaldame tühikud, kui kasutaja on sisestanud
+        intressimaar = intressimaar.strip()
+        # Asendame kõik komad punktidega
+        intressimaar = intressimaar.replace(',', '.')
         # kuna textbox on alati str type, siis proovime try exceptiga summa lahtrit muuta floatiks ning 2 komakohta peale koma
         # aga proovime convertida, kui õnnestub, siis prindime kasutajale tühja teate ehk mitte midagi ja kui ei, siis
         # kirjutame kasutajale sõnumina teate, mida kasutaja peab muutma või lisama
@@ -109,7 +113,7 @@ def run():
         # aga proovime convertida, kui õnnestub, siis prindime kasutajale tühja teate ehk mitte midagi ja kui ei, siis
         # kirjutame kasutajale sõnumina teate, mida kasutaja peab muutma või lisama
         try:
-            intressimaar = float(intressimaar)
+            intressimaar = round(float(intressimaar),2)
         except:
             tulemus_silt.configure(text="Palun sisestage intressimäär numbrites", text_color = "red")
         # tingimus1, kui summa on täisarv, siis veateadet ei kuvata
