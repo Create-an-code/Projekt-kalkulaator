@@ -111,6 +111,10 @@ def run():
         if summa == "":
             tulemus_silt.configure(text="Palun sisestage summa numbrites", text_color="red")
 
+
+        valuuta1, valuuta2 = kalk_kood.def_cur((valuuta_combobox1.get()) , (valuuta_combobox2.get()))
+        tulemus_silt.configure(text = round(kalk_kood.fx_converter(summa, valuuta1, valuuta2),2), text_color="green")
+
     # loome nupu, peale mida kuvatakse vajalik info, või veateated vms
     nupp = customtkinter.CTkButton(master=raam,
                                      width=120,
