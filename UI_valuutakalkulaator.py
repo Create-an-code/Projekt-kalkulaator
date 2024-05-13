@@ -1,8 +1,11 @@
 import tkinter
 import customtkinter
+import kalk_kood
 
 def run():
     
+    valuuta_list = kalk_kood.show_cur()
+
     # Akna loomine
     valuuta_aken = tkinter.Tk()
     valuuta_aken.geometry("600x400")
@@ -51,7 +54,7 @@ def run():
         print("Valisite valuuta kursiks:", valuuta)
 
     valuuta_combobox1 = customtkinter.CTkComboBox(master=raam,
-                                                 values=["USD", "EUR", "GBP"],
+                                                 values=valuuta_list,
                                                  command=valuuta_valik1)
     valuuta_combobox1.place(relx=0.2, rely=0.38, anchor=tkinter.CENTER)
     valuuta_combobox1.set("")
@@ -68,7 +71,7 @@ def run():
         print("Valisite valuuta kursiks:", valuuta)
 
     valuuta_combobox2 = customtkinter.CTkComboBox(master=raam,
-                                                 values=["USD", "EUR", "GBP"],
+                                                 values=valuuta_list,
                                                  command=valuuta_valik2)
     valuuta_combobox2.place(relx=0.8, rely=0.38, anchor=tkinter.CENTER)
     valuuta_combobox2.set("")
