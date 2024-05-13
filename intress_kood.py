@@ -15,14 +15,13 @@ def euribor():
     euribor = euribor[0]
     return euribor
 
-def LaenuArvutus(laenusumma, intress, kuud,):
+def LaenuArvutus(laenusumma, intress, kuud):
     euriboor = euribor()
-    laenusumma = 10000
-    intress = 2
-    intress = round((intress + euriboor)/100,5)
-    kuud = 60
+    print(euriboor)
     print(intress)
-    P = laenusumma / (((1.0 + intress)**kuud) - 1.0) / (intress * (1.0 + intress)**kuud)
-    kuumakse = round(P,2)
-    kogusumma = round(P*kuud,2)
+    intress = round((intress + euriboor)/100,5)
+    print(intress)
+    vastus = laenusumma / (((1.0 + intress)**kuud) - 1.0) / (intress * (1.0 + intress)**kuud)
+    kuumakse = round(vastus,2)
+    kogusumma = (round((vastus*kuud),2))
     return(kuumakse, kogusumma)

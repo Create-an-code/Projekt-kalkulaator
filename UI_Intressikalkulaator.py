@@ -149,7 +149,7 @@ def run():
         # tingimus11, kui intressimäära lahter jäetakse tühjaks, siis kuvatakse kasutajale veateade
         if intressimaar == "":
             tulemus_silt.configure(text="Palun sisestage intressimäär numbrites", text_color = "red")
-        kuuline , koik = intress_kood.LaenuArvutus(summa, kuu, intressimaar)
+        kuuline, koik= intress_kood.LaenuArvutus(summa, intressimaar, kuu)
         tulemus_silt.configure(text = 'Laenu kuumakse on ' + str(kuuline) + '€\n' + 
                             'Laenu kogukulu on ' + str(koik) + '€')
     # loome nupu, peale mida kuvatakse vajalik info, või veateated vms
