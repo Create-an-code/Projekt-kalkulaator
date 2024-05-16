@@ -32,7 +32,7 @@ _Projekti_vahearuanne_
 _Lõpparuanne_
 
 A. Projekti kokkuvõte:
-Projekt sai edukalt kuid planeeritust 3 päeva hiljem valmis. Projekt koosneb kahest osast: UI ehk kasutajaliidesest ning andmetöötlusest ehk arvutuslikust poolest. Jagasime meeskonna kaheks ning iga meeskonna pool sai projekti osa. Lõpus, kui kõik osad olid loodud, ühendasime projekti osad, et saada terviklik projekt. 
+Projekt sai edukalt kuid planeeritust 3 päeva hiljem valmis. Projekt koosneb kahest osast: UI ehk kasutajaliidesest ning andmetöötlusest ehk arvutuslikust poolest. Jagasime meeskonna kaheks ning iga meeskonna pool sai projekti osa. Lõpus, kui kõik osad olid loodud, ühendasime projekti osad, et saada terviklik projekt.
 
 B. Teostatud tööd
 - tegime lihtsa plaani, kuidas programm võiks välja näha plokkskeemis
@@ -44,4 +44,4 @@ C. Panused polnud projektis võrdsed, kuid need polnud ka kodutööde tegemisel 
 
 D. Projekti tugevus on see, et info mõlema kalkulaatori jaoks on ajakohane, st et me uuendame pidevalt andmeid ning ei pea manuaalselt faile uute valuuta ning euribori väärtustega uuendama. Selle töö teeb ära Euroopa Keskpanga API, mida iga kord callime. Nõrkuseks see, et igal uuel arvutamisel teeme ECBle uue calli, igal käivitusel võiks olla logifail, mis kontrollib viimast andmete uuendust, ning kui vajadust ei ole, siis ei tee uut API calli (valuutainfo uueneb päevas korra, seega võiks teha kontrolli, kas tänased andmed on juba alla tõmmatud)
 
-E. Väga palju arendada ei saaks, kuna selliseid programme on piisavalt. Lisaks on nad palju kiiremad jne, firmat selle pealt ehitada ei saaks.
+E. Väga palju arendada ei saaks, kuna selliseid programme on piisavalt. Lisaks on nad palju kiiremad jne, firmat selle pealt ehitada ei saaks. Meie eesmärk oli luua õpitud teadmisi rakendades kalkulaator, mis hõlmab valuutakalkulaatorit kui ka intressikalkulaatorit. 
