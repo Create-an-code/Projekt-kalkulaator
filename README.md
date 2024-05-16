@@ -1,8 +1,7 @@
 # Projekt-kalkulaator
 RAM0620 programmeermimise kursuse projekti hoidla
 
-
-Projekti plaan/kirjeldus
+_Projekti plaan/kirjeldus_
 RAHA KALKULAATOR
 
 A. Programm võimaldab kasutajatel arvutada erinevaid rahalisi toiminguid, logida finantstehinguid ning arvutada intressi või valuutakursside muutumist.
@@ -22,3 +21,24 @@ D. 05.04-23.04 - info otsimine
 24.04-10.05 - 
 
 10.05 peab valmis olema (tegelik tähtaeg 16.05, kui on esitlus), sest muidu laseme uuesti tähtaja mööda.
+
+
+_Projekti_vahearuanne_
+
+
+
+_Lõpparuanne_
+
+A. Projekt sai edukalt kuid planeeritust 3 päeva hiljem valmis.
+
+B. Teostatud tööd
+- tegime lihtsa plaani, kuidas programm võiks välja näha plokkskeemis
+- jagasime meeskonna pooleks
+- kirjutasime koodi
+- 
+
+C. Panused polnud projektis võrdses, kuid need polnud ka kodutööde tegemisel võrdsed. Ühte tegid ühed inimesed rohkem, teist teine meeskonaapool. Seega üldine panus meeskonda oli kursuse mõttes ühtlane ning keegi ära ei kadunud. 
+
+D. Projekti tugevus on see, et info mõlema kalkulaatori jaoks on ajakohane, st et me uuendame pidevalt andmeid ning ei pea manuaalselt faile uute valuuta ning euribori väärtustega uuendama. Selle töö teeb ära Euroopa Keskpanga API, mida iga kord callime. Nõrkuseks see, et igal uuel arvutamisel teeme ECBle uue calli, igal käivitusel võiks olla logifail, mis kontrollib viimast andmete uuendust, ning kui vajadust ei ole, siis ei tee uut API calli (valuutainfo uueneb päevas korra, seega võiks teha kontrolli, kas tänased andmed on juba alla tõmmatud)
+
+E. Väga palju arendada ei saaks, kuna selliseid programme on piisavalt. Lisaks on nad palju kiiremad jne, firmat selle pealt ehitada ei saaks
