@@ -2,7 +2,7 @@
 RAM0620 programmeermimise kursuse projekti hoidla
 
 _Projekti plaan/kirjeldus_
-RAHA KALKULAATOR
+VALUUTAKALKULAATOR/INTRESSIKALKULAATOR
 
 A. Programm võimaldab kasutajatel arvutada erinevaid rahalisi toiminguid, logida finantstehinguid ning arvutada intressi või valuutakursside muutumist.
 
