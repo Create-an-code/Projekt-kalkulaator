@@ -31,12 +31,13 @@ _Projekti_vahearuanne_
 
 _Lõpparuanne_
 
-A. Projekt sai edukalt kuid planeeritust 3 päeva hiljem valmis.
+A. Projekti kokkuvõte:
+Projekt sai edukalt kuid planeeritust 3 päeva hiljem valmis. Projekt koosneb kahest osast: UI ehk kasutajaliidesest ning andmetöötlusest ehk arvutuslikust poolest. Jagasime meeskonna kaheks ning iga meeskonna pool sai projekti osa. Lõpus, kui kõik osad olid loodud, ühendasime projekti osad, et saada terviklik projekt. 
 
 B. Teostatud tööd
 - tegime lihtsa plaani, kuidas programm võiks välja näha plokkskeemis
-- jagasime meeskonna pooleks
-- kirjutasime koodi
+- lõime projekti plaani, et mis kuupäevaks ning mis projekti osad peavad olema tehtud
+- jagasime meeskonna pooleks, Marcus ja Erik tegelesid andmetöötlusega ning sellega, et kõik andmed saaksid loetud ning et andmed saaksid kalkulaatorite arvutustes rakendatud. Patrick ja Oliver tegelesid projekti UI poolega, kus lõid 3 koodifaili, mis küsib kasutajalt vajalikke andmeid ning kasutaja kalkulaatori valikut.
 - 
 
 C. Panused polnud projektis võrdsed, kuid need polnud ka kodutööde tegemisel võrdsed. Ühte tegid ühed inimesed rohkem, teist teine meeskonna pool. Seega üldine panus meeskonda oli kursuse mõttes ühtlane ning keegi ära ei kadunud. 
