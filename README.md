@@ -37,11 +37,10 @@ Projekt sai edukalt kuid planeeritust 3 päeva hiljem valmis. Projekt koosneb ka
 B. Teostatud tööd
 - tegime lihtsa plaani, kuidas programm võiks välja näha plokkskeemis
 - lõime projekti plaani, et mis kuupäevaks ning mis projekti osad peavad olema tehtud
-- jagasime meeskonna pooleks, Marcus ja Erik tegelesid andmetöötlusega ning sellega, et kõik andmed saaksid loetud ning et andmed saaksid kalkulaatorite arvutustes rakendatud. Patrick ja Oliver tegelesid projekti UI poolega, kus lõid 3 koodifaili, mis küsib kasutajalt vajalikke andmeid ning kasutaja kalkulaatori valikut.
-- 
+- jagasime meeskonna pooleks, Marcus ja Erik tegelesid andmetöötlusega ning sellega, et kõik andmed saaksid loetud ning et andmed saaksid kalkulaatorite arvutustes rakendatud. Patrick ja Oliver tegelesid projekti UI (kasutajaliidese) poolega, kus lõid 3 koodifaili, mis küsib kasutajalt vajalikke andmeid ning kasutaja kalkulaatori valikut (main koodifail).
 
 C. Panused polnud projektis võrdsed, kuid need polnud ka kodutööde tegemisel võrdsed. Ühte tegid ühed inimesed rohkem, teist teine meeskonna pool. Seega üldine panus meeskonda oli kursuse mõttes ühtlane ning keegi ära ei kadunud. 
 
 D. Projekti tugevus on see, et info mõlema kalkulaatori jaoks on ajakohane, st et me uuendame pidevalt andmeid ning ei pea manuaalselt faile uute valuuta ning euribori väärtustega uuendama. Selle töö teeb ära Euroopa Keskpanga API, mida iga kord callime. Nõrkuseks see, et igal uuel arvutamisel teeme ECBle uue calli, igal käivitusel võiks olla logifail, mis kontrollib viimast andmete uuendust, ning kui vajadust ei ole, siis ei tee uut API calli (valuutainfo uueneb päevas korra, seega võiks teha kontrolli, kas tänased andmed on juba alla tõmmatud)
 
-E. Väga palju arendada ei saaks, kuna selliseid programme on piisavalt. Lisaks on nad palju kiiremad jne, firmat selle pealt ehitada ei saaks. Meie eesmärk oli luua õpitud teadmisi rakendades kalkulaator, mis hõlmab valuutakalkulaatorit kui ka intressikalkulaatorit. 
+E. Arenemisruumi on kindlasti, kuna saaks kasutata teisi mooduleid ning kasutajaliidest veel rohkem disainida ja rohkem värve ning isegi pilte esile tuua. TKinteri mooduli võtsime, kuna see oli meile juba tuttav ning teda on lihtne kasutada. Samuti saaks arendada programmi just mahu poole pealt, et programm muutuks kiiremaks ning ei tarbiks palju ressurssi. Meie eesmärk oli luua õpitud teadmisi rakendades kalkulaator, mis hõlmab valuutakalkulaatorit kui ka intressikalkulaatorit. Programm tuli üsna mahukas ning aeglane, Kuna aega oli vähe ning teadmisi samuti.
