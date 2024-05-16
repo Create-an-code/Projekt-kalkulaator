@@ -33,14 +33,21 @@ def fetch_forex():
     ordered_currency.insert(0 , ['EUR', 1])
     return(ordered_currency)
 
-
 def show_cur():
     valuuta_nimed = []
     for i in fetch_forex():
         valuuta_nimed.append(i[0])
     return(valuuta_nimed)
 
-#def fx_converter(cur1,cur2):
+def def_cur(cur1, cur2):
+    cur_list = show_cur()
+    money_list = fetch_forex()
+    name1 = cur_list.index(cur1)
+    name2 = cur_list.index(cur2)
+    name1 = money_list[name1][1]
+    name2 = money_list[name2][1]
+    return(name1, name2)
 
-kek = show_cur()
-print(kek)
+def fx_converter(sisend, cur1, cur2):
+    exh_rate = (sisend/cur1)*cur2
+    return(exh_rate)
